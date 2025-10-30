@@ -23,7 +23,7 @@ struct RangerParams {
   static constexpr double max_steer_angle_central = 0.6981;  //~= 30.58 degree
   static constexpr double max_steer_angle_parallel = 1.570;  // 40 degree
   static constexpr double max_round_angle = 1.0057;       // 40 degreeF
-  static constexpr double min_turn_radius = 0.810330349;
+  static constexpr double min_turn_radius = 0.810330349/2;  //0.810330349 更改转换成原地旋转模式时的参数(转弯半径) 
 };
 
 struct RangerMiniV1Params {
